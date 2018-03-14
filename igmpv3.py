@@ -1,4 +1,5 @@
 # Envio de 99 paquetes IGMPv3
+# (c) hackingyseguridad.com 2018
 #!/usr/bin/env python
 from scapy.all import *
 from scapy.contrib.igmp import IGMP
