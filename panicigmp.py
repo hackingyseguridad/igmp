@@ -1,3 +1,8 @@
+# Envia IGMP que genera un Kernel Panic en Linux remoto 2.6.36  
+# CVE : CVE-2012-0207
+# https://www.exploit-db.com/exploits/18378/
+# 
+# 
 import sys
 from scapy.all import *
 
