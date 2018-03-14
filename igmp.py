@@ -1,7 +1,8 @@
+# Envia 99 paquetes IGMPv2 con IP origen 1.1.1.1 
+# (c) hackingyseguridad.com 2018
 #!/usr/bin/env python
 from scapy.all import *
 from scapy.contrib.igmp import IGMP
-
 eth = Ether()
 iph = IP(src='1.1.1.1', dst='224.0.0.1', proto=2)
 igmp = IGMP(type=0x11, gaddr='0.0.0.0', mrtime=10)
