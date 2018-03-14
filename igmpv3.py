@@ -1,4 +1,4 @@
-# Envio de paquete IGMP
+# Envio de 99 paquetes IGMPv3
 #!/usr/bin/env python
 from scapy.all import *
 from scapy.contrib.igmp import IGMP
@@ -18,4 +18,4 @@ class IGMP3(Packet):
         return p
 bind_layers( IP, IGMP3, frag=0, proto=2)
 p = IP(dst="192.168.1.252")/IGMP3()
-send(p)
+send(p, count 99)
