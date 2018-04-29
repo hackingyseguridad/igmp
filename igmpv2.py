@@ -14,7 +14,7 @@ from scapy.contrib.igmp import IGMP
 eth = Ether()
 
 # Send General Group Query to 224.0.0.1 (all systems)
-iph = IP(src='192.168.1.42', dst='224.0.0.1', proto=2)
+iph = IP(src='192.168.1.1', dst='224.0.0.1', proto=2)
 igmp = IGMP(type=0x11, gaddr='0.0.0.0', mrtime=20)
 igmp.igmpize(iph,eth)
 sendp(eth/iph/igmp, iface="eth1", count=1)
